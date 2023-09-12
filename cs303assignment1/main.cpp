@@ -8,13 +8,19 @@ using namespace std;
 
 int main()
 {
+    //create array
     int myarray[150] = {};
     char userinput;
     int value, index;
+
+    
+    //read file
     fstream fin("myfile.txt");
     for (int i = 0; i < 100; i++) {
         fin >> myarray[i];
     }
+
+    
     while (true) {
         //menu
         cout << "Enter C to check if number is in array" << endl;
